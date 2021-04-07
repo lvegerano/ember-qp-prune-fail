@@ -1,0 +1,7 @@
+{{page-title "Main"}}
+<h1>Main Route</h1>
+<button type="button" {{on "click" this.changeQps}} >Change QPs</button>
+<button type="button" {{on "click" this.clearQps}} >Clear QPs</button>
+<button type="button" {{on "click" this.goToChildA}} >Go to Route A</button>
+<LinkTo @route="main.child-route-a" @query={{hash color="blue"}}>Go To Route A (LinkTo)</LinkTo>
+{{outlet}}
